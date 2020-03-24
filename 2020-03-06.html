@@ -10,6 +10,7 @@
       href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
     <style>
       body {
         /*  字号 */
@@ -33,6 +34,11 @@
       }
       .carousel-inner > .item > img {
         margin: auto;
+      }
+      .aplayer .aplayer-lrc p {
+        font-size: 15px;
+        line-height: 18px !important;
+        height: 18px !important;
       }
     </style>
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
@@ -178,15 +184,8 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div align="center" style="margin-top: 10px; margin-bottom: 10px;">
-            <audio controls style="width: 100%">
-              <source
-                src="http://media.hisword.cn/20200308e.mp3"
-                type="audio/mpeg"
-              />
-            </audio>
-          </div>
-          <div>
+          <div id="aplayer"></div>
+          <div style="margin-top:50px">
             <p>奉圣父圣子圣灵的名，阿门。今天的证道经文是雅各1:2-4</p>
             <p><strong>2愿他用口与我亲嘴。因你的爱情比酒更美。</strong></p>
             <p>
@@ -398,5 +397,18 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script>
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            lrcType: 3,
+            audio: [{
+                name: '雅歌第一课',
+                artist: '任不寐',
+                url: 'http://media.hisword.cn/20200308e.mp3',
+                lrc: 'http://media.hisword.cn/20200308.lrc'
+            }]
+        });
+    </script>
   </body>
 </html>
