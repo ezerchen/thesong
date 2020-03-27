@@ -10,6 +10,7 @@
       href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
     <style>
       body {
         /*  字号 */
@@ -23,7 +24,7 @@
         position: relative;
         padding-top: 8px;
         padding-bottom: 8px;
-        background-color: #888;
+        background-color: #ddd;
         left: auto;
         right: auto;
         bottom: initial;
@@ -34,6 +35,11 @@
       .carousel-inner > .item > img{
         margin:auto;
       }
+      .aplayer .aplayer-lrc p {
+        font-size: 14px;
+        line-height: 16px !important;
+        height: 16px !important;
+      }
     </style>
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -42,7 +48,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8 col-lg-offset-2">
-          <div>
+          <div style="margin-bottom:50px">
             <h2 align="center">雅歌导论：春天，相爱在所罗门的廊下（1:1）</h2>
           </div>
           <div id="myCarousel" class="carousel slide">
@@ -61,66 +67,66 @@
             <!-- 轮播（Carousel）项目 -->
             <div class="carousel-inner">
               <div class="item active">
-                <img src="./images/20200301_01.png" alt="20200223第1页">
+                <img src="./images/20200301_01.png" alt="20200301第1页">
                 <div class="carousel-caption">
-                  <h5 style="color:#FF0000">第1页</h5>
-                  <p style="color:#FF0000">00:00:00 -- 00:06:41</p>
+                  <h5 style="color:#888888">第1页</h5>
+                  <p style="color:#888888">00:00:00 -- 00:06:41</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/20200301_02.png" alt="20200223第2页">
+                <img src="./images/20200301_02.png" alt="20200301第2页">
                 <div class="carousel-caption">
-                  <h5 style="color:#FF0000">第2页</h5>
-                  <p style="color:#FF0000">00:06:41 -- 00:16:39</p>
+                  <h5 style="color:#888888">第2页</h5>
+                  <p style="color:#888888">00:06:41 -- 00:16:39</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/20200301_03.png" alt="20200223第3页">
+                <img src="./images/20200301_03.png" alt="20200301第3页">
                 <div class="carousel-caption">
-                  <h5 style="color:#FF0000">第3页</h5>
-                  <p style="color:#FF0000">00:16:39 -- 00:25:34</p>
+                  <h5 style="color:#888888">第3页</h5>
+                  <p style="color:#888888">00:16:39 -- 00:25:34</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/20200301_04.png" alt="20200223第4页">
+                <img src="./images/20200301_04.png" alt="20200301第4页">
                 <div class="carousel-caption">
-                  <h5 style="color:#FF0000">第4页</h5>
-                  <p style="color:#FF0000">00:25:34 -- 00:31:20</p>
+                  <h5 style="color:#888888">第4页</h5>
+                  <p style="color:#888888">00:25:34 -- 00:31:20</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/20200301_05.png" alt="20200223第5页">
+                <img src="./images/20200301_05.png" alt="20200301第5页">
                 <div class="carousel-caption">
-                  <h5 style="color:#FF0000">第5页</h5>
-                  <p style="color:#FF0000">00:31:20 -- 00:57:10</p>
+                  <h5 style="color:#888888">第5页</h5>
+                  <p style="color:#888888">00:31:20 -- 00:57:10</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/20200301_06.png" alt="20200223第6页">
+                <img src="./images/20200301_06.png" alt="20200301第6页">
                 <div class="carousel-caption">
-                  <h5 style="color:#FF0000">第6页</h5>
-                  <p style="color:#FF0000">00:57:10 -- 01:02:13</p>
+                  <h5 style="color:#888888">第6页</h5>
+                  <p style="color:#888888">00:57:10 -- 01:02:13</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/20200301_07.png" alt="20200223第7页">
+                <img src="./images/20200301_07.png" alt="20200301第7页">
                 <div class="carousel-caption">
-                  <h5 style="color:#FF0000">第7页</h5>
-                  <p style="color:#FF0000">00:59:24 -- 01:00:04</p>
+                  <h5 style="color:#888888">第7页</h5>
+                  <p style="color:#888888">00:59:24 -- 01:00:04</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/20200301_08.png" alt="20200223第8页">
+                <img src="./images/20200301_08.png" alt="20200301第8页">
                 <div class="carousel-caption">
-                  <h5 style="color:#FF0000">第8页</h5>
-                  <p style="color:#FF0000">01:02:13 -- 01:09:35</p>
+                  <h5 style="color:#888888">第8页</h5>
+                  <p style="color:#888888">01:02:13 -- 01:09:35</p>
                 </div>
               </div>
               <div class="item">
-                <img src="./images/20200301_09.png" alt="20200223第9页">
+                <img src="./images/20200301_09.png" alt="20200301第9页">
                 <div class="carousel-caption">
-                  <h5 style="color:#FF0000">第9页</h5>
-                  <p style="color:#FF0000">01:09:35 -- 01:10:25</p>
+                  <h5 style="color:#888888">第9页</h5>
+                  <p style="color:#888888">01:09:35 -- 01:10:25</p>
                 </div>
               </div>
             </div>
@@ -134,10 +140,8 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div align="center" style="margin-top: 10px; margin-bottom: 10px;">
-            <audio controls style="width: 100%"><source src="http://media.hisword.cn/20200301e.mp3" type="audio/mpeg"></audio>
-          </div>
-          <div>
+          <div id="aplayer"></div>
+          <div style="margin-top:50px">
             <p>奉圣父圣子圣灵的名，阿门。今天的证道经文是雅歌1:1-4</p>
             <p>
               <strong
@@ -513,5 +517,18 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script>
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            lrcType: 3,
+            audio: [{
+                name: '雅歌第一课',
+                artist: '任不寐',
+                url: 'http://media.hisword.cn/20200301e.mp3',
+                lrc: 'http://media.hisword.cn/20200301e.lrc'
+            }]
+        });
+    </script>
   </body>
 </html>
